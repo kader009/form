@@ -1,0 +1,90 @@
+.my-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #66a2e2d3;
+  padding: 7rem 2.8rem;
+  border-radius: 10px;
+}
+.my-form input {
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  font-size: 16px;
+  width: 280px;
+  transition: border-color 0.3s ease;
+}
+.my-form input:focus{
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+.my-form input::placeholder{
+  color: #999;
+  opacity: 0.7;
+}
+.my-form input:hover,
+.my-form input:focus {
+  background-color: #fff;
+}
+.my-form input[type="submit"] {
+  background-color: #124b88;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.my-form input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+#alert span{
+  color: #8d0b0b;
+}
+
+
+
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
